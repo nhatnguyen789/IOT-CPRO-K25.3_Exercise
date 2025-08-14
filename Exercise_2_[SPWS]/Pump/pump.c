@@ -12,7 +12,7 @@ void Pump_Init(void)
     GPIO_Init(PUMP_PORT, PUMP_PIN, GPIO_MODE_OUPUT_PP, GPIO_PULL_NONE);
 
     // log Initialization
-    Logging_LogMessage("PUMP: module initialized - Pump: %c%d\n", PUMP_PORT, PUMP_PIN);
+    printf(">> PUMP: module initialized - Pump: %c%d\n", PUMP_PORT, PUMP_PIN);
     Pump_Off(); // Ensure pump is off after initialization
 }
 void Pump_On(void)

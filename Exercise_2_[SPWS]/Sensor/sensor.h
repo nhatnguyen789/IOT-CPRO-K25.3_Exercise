@@ -26,7 +26,7 @@ typedef struct
 
 // Function prototype
 void Sensor_Init(void);
-void Sensor_ReadValues(void);
+Sensor_Data_t Sensor_ReadValues(void);
 void Sensor_GetData(Sensor_Data_t *pData);
 
 // externs for global variables

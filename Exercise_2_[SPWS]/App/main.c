@@ -103,7 +103,7 @@ int main(void)
             // Check if it's time to read senser values
             if((clock() - last_sensor_check_time) / CLOCKS_PER_SEC >= system_settings.sensor_check_interval_s )
             {
-                Sensor_ReadValues();
+                sensor_value = Sensor_ReadValues();
                 log_sensor_data(); // Log sensor data
                 last_sensor_check_time = clock(); // Update last sensor check time
 

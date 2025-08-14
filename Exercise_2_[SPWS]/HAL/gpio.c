@@ -6,8 +6,9 @@ void GPIO_Init(char port, int pin, GPIO_Mode_t mode, GPIO_Pull_t pull)
 {
     //1. Simulate clocking for the corresponding GPIO port 
     // In actual: RCC->APB2ENR |= (1 << Port_bit_position);
-    printf("Clocking GPIO port %c\n", port);
+    //printf("Clocking GPIO port %c\n", port);
 
+#if 0
     // 2. Simulate setting the mode of the GPIO pin
     switch(mode)
     {
@@ -34,4 +35,5 @@ void GPIO_Init(char port, int pin, GPIO_Mode_t mode, GPIO_Pull_t pull)
             printf(" with PULL DOWN!\n");
             break;
     }
+#endif
 }
