@@ -1,11 +1,7 @@
 #ifndef __SENSOR_H__
 #define __SENSOR_H__
 
-
-
-
 // include header files
-
 
 // Constant
 //---SENSOR CONFIGURATION---
@@ -22,7 +18,6 @@ typedef struct
     int Humidity;
     float Temperature;
 }Sensor_Data_t;
-
 
 // Function prototype
 void Sensor_Init(void);
